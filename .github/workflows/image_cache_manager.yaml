@@ -1,7 +1,7 @@
 name: image_cache_manager
 
 concurrency:
-  group: $-$
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 on:
@@ -15,4 +15,4 @@ jobs:
     with:
       flutter_channel: stable
       flutter_version: 3.3.7
-      working_directory: 'packages/image_cache_manager'
+      working_directory: "packages/image_cache_manager"

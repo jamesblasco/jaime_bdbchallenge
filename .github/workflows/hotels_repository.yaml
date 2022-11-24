@@ -1,7 +1,7 @@
 name: hotels_repository
 
 concurrency:
-  group: $-$
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 on:
@@ -15,4 +15,6 @@ jobs:
     with:
       flutter_channel: stable
       flutter_version: 3.3.7
-      working_directory: 'packages/hotels_repository'
+      working_directory: "packages/hotels_repository"
+      coverage_excludes: "lib/src/generated/*.dart lib/**/*.g.dart"
+

@@ -3,7 +3,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'hotel.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(createToJson: false)
 class Hotel extends Equatable {
   const Hotel({
     required this.imageUrl,
@@ -23,8 +23,5 @@ class Hotel extends Equatable {
   final String blurhash;
 
   @override
-  List<Object?> get props => [name, link];
-
-  /// Converts the [Hotel] to [Map].
-  Map<String, dynamic> toJson() => _$HotelToJson(this);
+  List<Object?> get props => [name, link, imageUrl, blurhash];
 }

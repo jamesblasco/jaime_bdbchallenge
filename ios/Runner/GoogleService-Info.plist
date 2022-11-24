@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>761346352606-ni3iiirtitpb7jbf7qaojjlm9om0qk3n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.761346352606-ni3iiirtitpb7jbf7qaojjlm9om0qk3n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAEW_DIPoYFMiB7UMb4btcLPy2Kfcn6XHc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>761346352606</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.bdbChallenge</string>
+	<key>PROJECT_ID</key>
+	<string>flutterballoon</string>
+	<key>STORAGE_BUCKET</key>
+	<string>flutterballoon.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:761346352606:ios:bda561cf8df0ce5866e94f</string>
+</dict>
+</plist>

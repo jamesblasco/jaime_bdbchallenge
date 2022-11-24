@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "761346352606",
+    "project_id": "flutterballoon",
+    "storage_bucket": "flutterballoon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761346352606:android:dcd8094adfb2c47766e94f",
+        "android_client_info": {
+          "package_name": "com.example.bdb_challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761346352606-310fltl2ubvssairqfggkls7493gd4nr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBslYVNqPve2cLzycl36jIu8Sjsa-3dfRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761346352606-310fltl2ubvssairqfggkls7493gd4nr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "761346352606-ni3iiirtitpb7jbf7qaojjlm9om0qk3n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.bdbChallenge"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

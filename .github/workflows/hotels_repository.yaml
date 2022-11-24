@@ -15,4 +15,4 @@ jobs:
     with:
       flutter_channel: stable
       flutter_version: 3.3.7
-      working_directory: 'packages/hotels_repository'
+      working_directory: "packages/hotels_repository"

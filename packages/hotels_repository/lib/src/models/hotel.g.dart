@@ -12,10 +12,3 @@ Hotel _$HotelFromJson(Map<String, dynamic> json) => Hotel(
       name: json['name'] as String,
       link: json['link'] as String,
     );
-
-Map<String, dynamic> _$HotelToJson(Hotel instance) => <String, dynamic>{
-      'name': instance.name,
-      'link': instance.link,
-      'imageUrl': instance.imageUrl,
-      'blurhash': instance.blurhash,
-    };

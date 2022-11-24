@@ -12,12 +12,9 @@ class HotelsRepository {
 
   Future<List<Hotel>> hotels() async {
     try {
-      final hotelsRef = _firestore.collection('hotels').withConverter<Hotel>(
-            fromFirestore: (snapshot, _) => Hotel.fromJson(snapshot.data()!),
-            toFirestore: (hotel, _) => hotel.toJson(),
-          );
+      final hotelsRef = _firestore.collection('hotels');
       final snapshots = await hotelsRef.get();
-      return snapshots.docs.map((e) => e.data()).toList();
+      return snapshots.docs.map((e) => Hotel.fromJson(e.data())).toList();
     } catch (e, s) {
       throw HotelsFailure(e, s);
     }

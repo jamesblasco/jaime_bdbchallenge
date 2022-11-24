@@ -40,7 +40,10 @@ class _HotelVideoState extends State<HotelVideo> {
       switchInCurve: Curves.easeOutExpo,
       duration: const Duration(milliseconds: 200),
       child: _controller.value.isInitialized
-          ? VideoPlayer(_controller)
+          ? FitCoverBox(
+              size: _controller.value.size,
+              child: VideoPlayer(_controller),
+            )
           : SizedBox.expand(
               child: widget.placeholder ?? const SizedBox(),
             ),
@@ -51,5 +54,26 @@ class _HotelVideoState extends State<HotelVideo> {
   void dispose() {
     super.dispose();
     _controller.dispose();
+  }
+}
+
+class FitCoverBox extends StatelessWidget {
+  const FitCoverBox({super.key, required this.size, required this.child});
+
+  final Size size;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox.expand(
+      child: FittedBox(
+        fit: BoxFit.cover,
+        clipBehavior: Clip.hardEdge,
+        child: SizedBox.fromSize(
+          size: size,
+          child: child,
+        ),
+      ),
+    );
   }
 }

@@ -1,7 +1,7 @@
 name: image_cache_manager
 
 concurrency:
-  group: $-$
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 on:

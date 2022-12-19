@@ -23,7 +23,7 @@ dependencies:
   image_cache_manager:
     path: packages/image_cache_manager
   
-  video_player: ^2.4.8
+  video_player: ^2.4.10
  
 
 dev_dependencies:
